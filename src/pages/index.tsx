@@ -1,5 +1,4 @@
-import Head from 'next/head'
-
+import { CompletedChalleng } from '../components/CompletedChalleng';
 import { ExperienceBar } from "../components/ExperienceBar";
 import { Profile } from '../components/Profile';
 import styles from '../styles/pages/Home.module.css'
@@ -12,6 +11,7 @@ export default function Home() {
       <section>
         <div>
           <Profile />
+          <CompletedChalleng />
         </div>
         <div></div>
       </section>
