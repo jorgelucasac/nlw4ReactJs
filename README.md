@@ -9,6 +9,7 @@
  <a href="#-layout">Layout</a> • 
  <a href="#-como-executar-o-projeto">Como executar</a> • 
  <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-links-da-aplicação">Links da aplicação</a> • 
 </p>
 
 
@@ -53,14 +54,6 @@ O layout da aplicação está disponível no Figma e foi feito pelo Tiago Luchte
 
 
 ### Web
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/Home.png" width="400px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/ciclo-encerrado.png" width="400px">
-</p>
-
-
 
 
 ## 🚀 Como executar o projeto
@@ -112,4 +105,9 @@ As seguintes ferramentes foram usadas na construção do projeto:
 2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
 3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
 4. Envie as suas alterações: `git push origin my-feature`
+
+## Links da aplicação
+
+> [produção](https://jorgelucas-movit.vercel.app/)
+> [Homologação](https://moveit-git-develop-jorge-lucas.vercel.app)
 
