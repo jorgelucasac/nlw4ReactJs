@@ -20,7 +20,8 @@ interface ChallengesContextData {
     levelUp: () => void,
     startNewChalenge: () => void,
     resetChalleng: () => void,
-    challengeSucceeded: () => void
+    challengeSucceeded: () => void,
+    challengeCaceled: boolean
 }
 
 export const ChallengesContext = createContext({} as ChallengesContextData);
@@ -31,6 +32,8 @@ export function ChallengeProvider({ children }: ChallengeProviderProps) {
     const [level, setLevel] = useState(1);
     const [currentExperience, setCurrentExperience] = useState(0);
     const [challengeCompeted, setChallengeCompeted] = useState(0);
+
+    const [challengeCaceled, setchallengeCaceled] = useState(false);
 
     const [actveChallenge, setActveChallenge] = useState(null);
 
@@ -45,10 +48,12 @@ export function ChallengeProvider({ children }: ChallengeProviderProps) {
         const challenge = challenges[randomChallengeIndex];
 
         setActveChallenge(challenge);
+        setchallengeCaceled(false);
     }
 
     function resetChalleng() {
         setActveChallenge(null);
+        setchallengeCaceled(true);
     }
 
     function challengeSucceeded() {
@@ -63,6 +68,7 @@ export function ChallengeProvider({ children }: ChallengeProviderProps) {
         }
 
         setActveChallenge(null);
+        setchallengeCaceled(false);
     }
 
     return (
@@ -75,7 +81,8 @@ export function ChallengeProvider({ children }: ChallengeProviderProps) {
             actveChallenge,
             resetChalleng,
             experienceToNextLevel,
-            challengeSucceeded
+            challengeSucceeded,
+            challengeCaceled
         }}>
             {children}
         </ChallengesContext.Provider>
