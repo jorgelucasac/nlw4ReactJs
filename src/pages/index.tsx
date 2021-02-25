@@ -6,6 +6,7 @@ import { Profile } from '../components/Profile';
 import styles from '../styles/pages/Home.module.css'
 
 import Head from 'next/head';
+import { CountdonwProvider } from '../contexts/CountdownContext';
 
 
 export default function Home() {
@@ -15,17 +16,18 @@ export default function Home() {
         <title>Início | move.it</title>
       </Head>
       <ExperienceBar />
-
-      <section>
-        <div>
-          <Profile />
-          <CompletedChalleng />
-          <Countdown />
-        </div>
-        <div>
-          <ChallengeBox />
-        </div>
-      </section>
+      <CountdonwProvider>
+        <section>
+          <div>
+            <Profile />
+            <CompletedChalleng />
+            <Countdown />
+          </div>
+          <div>
+            <ChallengeBox />
+          </div>
+        </section>
+      </CountdonwProvider>
     </div>
   )
 }
