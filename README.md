@@ -110,6 +110,7 @@ As seguintes ferramentes foram usadas na construção do projeto:
 
 ## Links da aplicação
 
-> [produção](https://jorgelucas-movit.vercel.app/)
-> [Homologação](https://moveit-git-develop-jorge-lucas.vercel.app)
+> [produção](https://jorgelucas-movit.vercel.app/) - Exibe a aplicação com o tempo real dos ciclos (25 minutos)
+
+> [Homologação](https://moveit-git-develop-jorge-lucas.vercel.app) - Exibe a aplicação com duração dos cliclos reduzidos (6 segundos) para possibilitar os testes de todas as funcionalidades.
 
