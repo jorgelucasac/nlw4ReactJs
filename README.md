@@ -1,6 +1,6 @@
 <h1 align="center">  MoveIt - NLW#4 </h1>
 
-<h4 align="center"> 🚧 Em construção...  🚧 </h4>
+<!-- <h4 align="center"> 🚧 Em construção...  🚧 </h4> -->
 
 
 <p align="center">
@@ -41,6 +41,7 @@ O MoveIt é um projeto que está sendo desenvolvido na NLW#4 realizado pela Rock
   - [X] Passar para o próximo desafio
 - [X] Passar de level após completar a barra de XP
 - [X] Notificações de novo desafio disponível
+- [X] Modal de informe de Level Up
 
 
 
